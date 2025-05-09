@@ -48,7 +48,7 @@ namespace FileStorage
                         Directory.CreateDirectory(storagePath);
                         logger.LogInformation("Создана папка для хранения файлов: {StoragePath}", storagePath);
                     }
-                    logger.LogInformation("Сервер запущен! Обращайтесь по http://localhost:5000");
+                    logger.LogInformation("Сервер запущен на http://localhost:5000");
                 })
                 .UseEnvironment("Development");
         }
